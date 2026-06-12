@@ -8,5 +8,7 @@ public class MainClass {
         Calculator calculator = new Calculator();
 
         System.out.println("Addition   ::   "+calculator.add(20,40));
+
+        System.out.println("Subtraction   ::   "+calculator.sub(40, 20));
     }
 }
