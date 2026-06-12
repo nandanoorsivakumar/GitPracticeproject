@@ -12,5 +12,7 @@ public class MainClass {
         System.out.println("Subtraction   ::   "+calculator.sub(40, 20));
 
         System.out.println("Subtraction   ::   "+calculator.multiply(40, 20));
+
+        System.out.println("Divided by   ::   "+calculator.dividedby(40, 20));
     }
 }
