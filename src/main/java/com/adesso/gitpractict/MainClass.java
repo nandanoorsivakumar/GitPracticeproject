@@ -1,5 +1,7 @@
 package com.adesso.gitpractict;
 
+import static java.lang.Math.round;
+
 public class MainClass {
 
     public static void main(String[] args){
@@ -14,5 +16,9 @@ public class MainClass {
         System.out.println("Multiplication   ::   "+calculator.multiply(40, 20));
 
         System.out.println("Divided by   ::   "+calculator.dividedby(40, 20));
+
+        System.out.println("squareroot of a given number  ::   "+round(calculator.squareroot(4)));
+
+
     }
 }
