@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: GitPractict
+
+server:
+  port: 8081
+
+app:
+  environment: DEV
