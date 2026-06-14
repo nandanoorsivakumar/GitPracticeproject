@@ -20,7 +20,7 @@ public class Calculator {
         return a/b;
     }
 
-    public double squareroot(int a){
+    public double square(int a){
         return round(a * a);
     }
 }

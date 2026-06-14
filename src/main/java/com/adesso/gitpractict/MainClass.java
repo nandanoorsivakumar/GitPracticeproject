@@ -17,7 +17,7 @@ public class MainClass {
 
         System.out.println("Divided by   ::   "+calculator.dividedby(40, 20));
 
-        System.out.println("squareroot of a given number  ::   "+round(calculator.squareroot(4)));
+        System.out.println("square of a given number  ::   "+round(calculator.square(4)));
 
 
     }
