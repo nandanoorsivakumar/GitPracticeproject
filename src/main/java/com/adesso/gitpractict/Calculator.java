@@ -23,4 +23,8 @@ public class Calculator {
     public double square(int a){
         return round(a * a);
     }
+
+    public int cube(int a){
+        return a * a * a;
+    }
 }
