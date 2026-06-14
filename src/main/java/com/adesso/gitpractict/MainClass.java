@@ -19,6 +19,8 @@ public class MainClass {
 
         System.out.println("square of a given number  ::   "+round(calculator.square(4)));
 
+        System.out.println("Cube of a given number  ::   "+round(calculator.cube((4))));
+
 
     }
 }
