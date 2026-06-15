@@ -1,9 +1,7 @@
 pipeline {
-
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
                 git branch: 'main',
@@ -13,17 +11,33 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat '.\\mvnw.cmd clean package'
+                bat '.\\mvnw.cmd clean compile'
             }
         }
 
+        stage('Test') {
+            steps {
+                bat '.\\mvnw.cmd test'
+            }
+        }
+
+        stage('Package') {
+            steps {
+                bat '.\\mvnw.cmd package'
+            }
+        }
+
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
+            }
+        }
     }
 
     post {
         success {
             echo 'Build Successful'
         }
-
         failure {
             echo 'Build Failed'
         }
